@@ -1,10 +1,16 @@
+function mudandoTitulo() {
+    let titulo = document.querySelector('h2');
+    titulo.innerHTML = 'Planilha de Dados das Crops';
+}
+mudandoTitulo();
+
 function dadosDasCrops(statusDaCrop) {
     let crop = ['',sunflower, potato, pumpkin, carrot, cabbage, soybean, beetroot, cauliflower, parsnip, eggplant, corn, radish, wheat, kale, barley];
     //console.log(`        Semente = ${crop[statusDaCrop][0]}
     //    Tempo = ${crop[statusDaCrop][1]}
     //    Custo = ${crop[statusDaCrop][2]} coins
     //    Venda = ${crop[statusDaCrop][3]} coins
-    //    Stock = ${crop[statusDaCrop][4]} sementes`);
+    //    Estoque = ${crop[statusDaCrop][4]} sementes`);
     let semente = document.getElementById('resultado1');
     semente.innerHTML = `Semente = ${crop[statusDaCrop][0]}`;
     let tempo = document.getElementById('resultado2');
@@ -13,10 +19,9 @@ function dadosDasCrops(statusDaCrop) {
     custo.innerHTML = `Custo = ${crop[statusDaCrop][2]} coins`;
     let venda = document.getElementById('resultado4');
     venda.innerHTML = `Venda = ${crop[statusDaCrop][3]} coins`;
-    let stock = document.getElementById('resultado5');
-    stock.innerHTML = `Stock = ${crop[statusDaCrop][4]} sementes`;
+    let estoque = document.getElementById('resultado5');
+    estoque.innerHTML = `Estoque = ${crop[statusDaCrop][4]} sementes`;
 }
-
 
 let statusDaCrop = parseInt(prompt('Gostaria de ver o status de qual Crop? Digite o numero correspondente da Crop:\n 01 - Sunflower\n 02 - Potato\n 03 - Pumpkin\n 04 - Carrot\n 05 - Cabbage\n 06 - Soybean\n 07 - Beetroot\n 08 - Cauliflower\n 09 - Parsnip\n 10 - Eggplant\n 11 - Corn\n 12 - Radish\n 13 - Wheat\n 14 - Kale\n 15 - Barley'));
 //Semente - Tempo - Custo - Venda - Estoque
