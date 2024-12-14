@@ -21,6 +21,8 @@ function dadosDasCrops(statusDaCrop) {
     venda.innerHTML = `Venda = ${crop[statusDaCrop][3]} coins`;
     let estoque = document.getElementById('resultado5');
     estoque.innerHTML = `Estoque = ${crop[statusDaCrop][4]} sementes`;
+    let lucro = document.getElementById('resultado6');
+    lucro.innerHTML = `Lucro do Estoque = ${(crop[statusDaCrop][3]*crop[statusDaCrop][4])-(crop[statusDaCrop][2]*crop[statusDaCrop][4])} coins`;
 }
 
 let statusDaCrop = parseInt(prompt('Gostaria de ver o status de qual Crop? Digite o numero correspondente da Crop:\n 01 - Sunflower\n 02 - Potato\n 03 - Pumpkin\n 04 - Carrot\n 05 - Cabbage\n 06 - Soybean\n 07 - Beetroot\n 08 - Cauliflower\n 09 - Parsnip\n 10 - Eggplant\n 11 - Corn\n 12 - Radish\n 13 - Wheat\n 14 - Kale\n 15 - Barley'));
